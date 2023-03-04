@@ -95,12 +95,10 @@ function navDynamicStyles(buffer) {
         background: "-o-linear-gradient(#2f2f2f, #f8f8f8)",
         background: "-moz-linear-gradient(#2f2f2f, #f8f8f8)",
       });
-
       brandImage.css({
-        background: "none",
-        boxShadow: "none",
+        background: "White",
       });
-
+      document.getElementById("nav-logo").height = "30";
       siteTitle.css({
         color: "White",
       });
@@ -134,10 +132,9 @@ function navDynamicStyles(buffer) {
       navbar.css({
         background: "none",
       });
-
+      document.getElementById("nav-logo").height = "350";
       brandImage.css({
-        backgroundColor: "#ccc",
-        boxShadow: "0 0 3px #ccc",
+        background: "Transparent",
       });
 
       siteTitle.css({

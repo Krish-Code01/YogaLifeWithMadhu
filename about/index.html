@@ -4,14 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Yoga Life with Madhu</title>
-    <!-- <meta name="description" content="The online portfolio of web apps, programs, and games created by designer Jim Kulakowski.">
-		<meta name="keywords" content="HTML,CSS,XML,JavaScript,JQuery,web programming,app development,syracuse web development,syracuse,ny,web development,web design,user interface design,ui design,user experience design,ux design">
-		<meta name="author" content="Jim Kulakowski"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yoga Life with Madhu</title>
-    <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="#" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
@@ -57,8 +52,6 @@
                 a collaborative spirit. I maintain an ongoing understanding and study of human anatomy as it applies to
                 yoga.
             </h4>
-            <!-- <img src="https://i.postimg.cc/RVz2mpcc/Whats-App-Image-2023-02-22-at-6-06-19-PM.jpg" alt="jim at piano"
-                class="profile-img"> -->
             <hr class="style-seven" />
             <p>
                 <a class="btn btn-lg btn-clear-light soft-transition" href="#" role="button" target="_blank"><i
@@ -84,15 +77,14 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">
                             <img src="https://i.postimg.cc/hhFSxsJK/yogalifewithmadhu-logo.png"
-                                alt="Yoga Life with Madhu Logo" class="site-logo">
-                            <p>Yoga Life with Madhu</p>
+                                alt="Yoga Life with Madhu Logo" class="site-logo" id="nav-logo">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="/index.html">Home</a></li>
-                            <li><a href="#portfolio">Services</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Certificates</a></li>
                             <li><a href="./">About Us</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -100,7 +92,7 @@
                 </div>
             </div>
         </nav>
-        <section>
+        <section id="services">
             <div class="image-slider slider">
                 <div class="slider-items-container">
                     <div class="slider-items">
@@ -182,142 +174,21 @@
         </section>
         <section id="portfolio">
             <div class="container">
-                <h1>Services</h1>
+                <h1>Certificates</h1>
                 <hr class="style-seven" />
-                <div class="row">
-                    <div class="col-md-4 soft-transition">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Yoga Classes', 'zfGzYVKS/pexels-valeria-ushakova-3094230.jpg', 'Group or individual sessions led by a certified yoga instructor to guide students through various yoga poses and breathing techniques.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/zfGzYVKS/pexels-valeria-ushakova-3094230.jpg"
-                                alt="cube art thumbnail" class="project-thumb">
-                            <h3>Yoga Classes</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Yoga Therapy', 'P5NVGHNv/pexels-andrea-piacquadio-3775593.jpg', 'One-on-one sessions with a trained yoga therapist to help individuals with specific health conditions, such as back pain, stress, or anxiety.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/P5NVGHNv/pexels-andrea-piacquadio-3775593.jpg"
-                                alt="js audio player thumbnail" class="project-thumb">
-                            <h3>Yoga Therapy</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Online Yoga Classes', 'G3VHPJG0/pexels-karl-solano-2780762.jpg', 'Live or pre-recorded yoga sessions that can be accessed through a computer or mobile device.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/G3VHPJG0/pexels-karl-solano-2780762.jpg"
-                                alt="piano app thumbnail" class="project-thumb">
-                            <h3>Online Yoga Classes</h3>
-                        </a>
-                    </div>
-                </div>
-                <br />
-                <div class="row">
-                    <div class="col-md-4 soft-transition">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Yoga Workshops', 'sDx4xczt/pexels-cliff-booth-4057839.jpg', 'Offering in-depth instruction on specific aspects of yoga, such as anatomy, philosophy, or advanced poses.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/sDx4xczt/pexels-cliff-booth-4057839.jpg"
-                                alt="rock, paper, scissors thumbnail" class="project-thumb">
-                            <h3>Yoga Workshops</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Private Yoga Instruction', '658CtpLK/pexels-elina-fairytale-3823039.jpg', 'Offering in-depth instruction on specific aspects of yoga, such as anatomy, philosophy, or advanced poses.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/658CtpLK/pexels-elina-fairytale-3823039.jpg"
-                                alt="gravity square thumbnail" class="project-thumb">
-                            <h3>Private Yoga Instruction</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" data-toggle="modal" data-target="#modal"
-                            onclick="loadModal('Personalized Tuition', 'm211K6B2/pexels-max-nikhil-thimmayya-802417.jpg', 'Interactive Classes keeping the class size small gives us the flexibility to offer you individualized attention during each class and each step of the way.', '#')">
-                            <div class="project-overlay teall-bg"></div>
-                            <img src="https://i.postimg.cc/m211K6B2/pexels-max-nikhil-thimmayya-802417.jpg"
-                                alt="tim burton site thumbnail" class="project-thumb">
-                            <h3>Personalized Tuition</h3>
-                        </a>
-                    </div>
-                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                            aria-hidden="true">&times;</span></button>
-                                    <h2 class="modal-title" id="myModalLabel"></h2>
-                                </div>
-                                <div class="modal-thumb">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="modal-body"></div>
-                                <div class="modal-footer">
-                                    <a href="#" type="button" class="btn btn-default btn-clear-dark"
-                                        target="_blank">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="reviews" class="teall-bg">
-            <div class="container">
-                <h1>What our customer say</h1>
-                <hr class="style-seven" />
-            </div>
-            <div class="sliders">
-                <div class="slide active">
-                    <div class="panel">
-                        <div class="top" data-back="EXPERIENCE"></div>
-                        <div class="bottom" data-back="EXPERIENCE"></div>
-                    </div>
-                    <div class="center">
-                        <h1>“I wish more people on this earth would get to experience working with Madhu. We all need a
-                            loving,
-                            kind,
-                            healing touch to our bodies and souls”</h1>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="panel">
-                        <div class="top" data-back="TRANSFORM"></div>
-                        <div class="bottom" data-back="TRANSFORM"></div>
-                    </div>
-                    <div class="center">
-                        <h1>“Over the course of six months, I went from living an unconscious, stressful and busy life
-                            to one of
-                            absolute self-care, substance, and presence. Madhu’s knowledge, expertise, and guidance with
-                            ayurveda
-                            helped
-                            to completely change my life.”</h1>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="panel">
-                        <div class="top" data-back="SOULFUL"></div>
-                        <div class="bottom" data-back="SOULFUL"></div>
-                    </div>
-                    <div class="center">
-                        <h1>“My emotions are happier, my digestion is normal for the first time in my life, and I can
-                            feel that I am
-                            now living in alignment with nature rather than going against it. My body, mind and soul
-                            want to live this
-                            way forever”</h1>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="panel">
-                        <div class="top" data-back="GRATITUDE"></div>
-                        <div class="bottom" data-back="GRATITUDE"></div>
-                    </div>
-                    <div class="center">
-                        <h1>“There are honestly no words to match the level of gratitude I hold for you in my heart.”
-                        </h1>
-                    </div>
+                <div class="gallary">
+                    <a class="col-4_xs-12"
+                        href="https://i.postimg.cc/500K7vDB/Screenshot-2023-03-03-at-10-16-41-PM.png">
+                        <div class="bg-image portrait bg-img-3"></div>
+                    </a>
+                    <a class="col-4_xs-12"
+                        href="https://i.postimg.cc/JtwTzF0x/Screenshot-2023-03-03-at-10-16-30-PM.png">
+                        <div class="bg-image portrait bg-img-4"></div>
+                    </a>
+                    <a class="col-4_xs-12"
+                        href="https://i.postimg.cc/8cfKDGps/Screenshot-2023-03-03-at-10-16-11-PM.png">
+                        <div class="bg-image portrait bg-img-5"></div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -336,27 +207,25 @@
                 <h4> Phone- +91 7982295999</h4>
             </div>
             <div class="last">
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=152 G Block Ashok vihar phase 3 Gurugram, Haryana 122017&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><br>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 100%;
-                                width: 100%;
-                            }
-                        </style>
-                        <style>
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 100%;
-                                width: 100%;
-                            }
-                        </style>
+                <div class="form">
+                    <h1>Submit your query</h1>
+                    <form action="https://formsubmit.co/studentlife.25.10a@gmail.com" method="POST" />
+                    <div class="group">
+                        <input type="text" name="name" required>
+                        <span class="highlight"></span>
+                        <label>Your name</label>
                     </div>
+                    <div class="group">
+                        <input type="email" name="email" required>
+                        <span class="highlight"></span>
+                        <label>Your email</label>
+                    </div>
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit">Send</button>
                 </div>
             </div>
         </div>

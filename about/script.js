@@ -83,10 +83,6 @@ function navDynamicStyles(buffer) {
       ".navbar-default .navbar-collapse, .navbar-default .navbar-form"
     );
 
-    /* -----------------------------
-    --	 Scrolled Nav Settings		--
-    ------------------------------*/
-    // If the window is scrolled beyond the buffer
     if (scrollDistance > buffer) {
       navbar.css({
         backgroundColor: "#2f2f2f",
@@ -95,7 +91,7 @@ function navDynamicStyles(buffer) {
         background: "-o-linear-gradient(#2f2f2f, #f8f8f8)",
         background: "-moz-linear-gradient(#2f2f2f, #f8f8f8)",
       });
-
+      document.getElementById("nav-logo").height = "30";
       brandImage.css({
         background: "none",
         boxShadow: "none",
@@ -134,6 +130,7 @@ function navDynamicStyles(buffer) {
       navbar.css({
         background: "none",
       });
+      document.getElementById("nav-logo").height = "350";
 
       brandImage.css({
         backgroundColor: "#ccc",
@@ -412,4 +409,8 @@ var photo = slider(".image-slider", { duration: 0.7 }),
 
 photo.onSlide(function (index) {
   text.slideTo(index);
+});
+lightGallery(document.getElementById("lightgallery"), {
+  speed: 500,
+  download: false,
 });

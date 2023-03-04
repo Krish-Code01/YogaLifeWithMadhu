@@ -175,7 +175,6 @@ hr.style-seven:before {
   padding: 0;
 }
 
-/*-- Navbar settings --*/
 .navbar {
   transition: all 0.5s ease-out;
 }
@@ -186,15 +185,14 @@ hr.style-seven:before {
 }
 
 .navbar-brand {
-  padding: 10px; /* Allows more space for brand logo to expand */
+  padding: 10px;
 }
 
 .navbar-brand > img {
-  max-height: 100%;
+  max-height: 400%;
+  transition: linear 0.4s;
   display: inline-block;
   margin-right: 2px;
-  background-color: #ccc;
-  box-shadow: 0 0 3px #ccc;
 }
 
 .navbar-brand p {
@@ -297,14 +295,12 @@ hr.style-seven:before {
   transform: scale(1.1);
 }
 
-/*-- Custom Modal Settings --*/
 .modal-content {
   border-radius: 0;
 }
 
 .modal-dialog {
-  /* width: 80%; */
-  margin: 0 auto; /* Eliminate top margin on bootstrap modal */
+  margin: 0 auto;
 }
 
 .modal-thumb img {
@@ -358,11 +354,6 @@ footer {
   padding: 20px;
   background-color: #ddd;
 }
-
-/*-----------------
-* Mobile Settings *
------------------*/
-/* Make sure parallax image fills jumbotron */
 @media (max-width: 1200px) {
   .jumbotron .parallax-img {
     width: auto;
@@ -370,9 +361,7 @@ footer {
   }
 }
 
-/*-- iPhone 6+ --*/
 @media (max-width: 736px) {
-  /* Expand feature image size */
   .jumbotron .profile-img {
     width: 50%;
     margin-top: 0;
@@ -381,12 +370,10 @@ footer {
     top: 40px;
     font-family: "Acme", sans-serif;
   }
-  /* Give overlapping buttons vertical space */
   .jumbotron .container a {
     margin-bottom: 10px;
   }
 
-  /* Expand various element widths */
   #about p,
   #contact form,
   .modal-body,
@@ -525,7 +512,7 @@ footer {
   justify-content: center;
   margin-top: 47vh;
   width: 100vw;
-  height: calc(800px - 20vw);
+  height: calc(1000px - 20vw);
   background-color: #2f2f2f;
 }
 .ending .last {
@@ -560,4 +547,132 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
   }
+}
+
+.form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -35%;
+}
+.form h1 {
+  margin-left: 100px;
+}
+
+@media (max-width: 1200px) {
+  .form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+  }
+  .form h1 {
+    margin-left: 0;
+  }
+}
+
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input {
+  font-size: 13px;
+  height: 40px;
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b1b1b1;
+  color: #b1b1b1;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+label {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 15px;
+  opacity: 0.5;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #b1b1b1;
+  opacity: 1;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+a.send-btn {
+  float: right;
+  color: #b1b1b1;
+  transition: 0.2s ease;
+}
+
+a.send-btn:hover {
+  color: #fafafa;
+  cursor: pointer;
 }
