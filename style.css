@@ -191,6 +191,7 @@ hr.style-seven:before {
 .navbar-brand > img {
   max-height: 400%;
   transition: linear 0.4s;
+  border-radius: 10px;
   display: inline-block;
   margin-right: 2px;
 }
@@ -428,7 +429,7 @@ footer {
 .slide .bottom {
   content: attr(data-back);
   position: absolute;
-  font-size: 20vw;
+  font-size: 25vw;
   font-weight: 800;
   height: 25vh;
   width: 100vw;
@@ -487,7 +488,7 @@ footer {
   text-align: center;
 }
 .center h1 {
-  font-size: 3vw;
+  font-size: 3.4vw;
   opacity: 0.6;
   line-height: 1;
   font-family: "BenchNine", sans-serif;
